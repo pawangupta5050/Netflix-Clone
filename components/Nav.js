@@ -1,4 +1,4 @@
-import requests from "../Utilities/requests"
+import requests from "../utilities/requests"
 import { useRouter } from "next/router"
 import styles from '../styles/Nav.module.css'
 
