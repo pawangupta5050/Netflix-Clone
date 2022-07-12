@@ -1,0 +1,48 @@
+.app__thumbnail {
+    padding: 8px;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    margin: 10px;
+}
+
+.app__thumbnail:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.app__thumbnail_content {
+    padding: 8px;
+}
+
+.app__thumbnail_overview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 448px;
+}
+
+.app__thumbnail_title {
+    margin-top: 4px;
+    font-size: 24px;
+    line-height: 32px;
+    transition: all 100ms ease-in-out;
+}
+
+.app__thumbnail:hover .app__thumbnail_title {
+    font-weight: 700;
+}
+
+.app__thumbnail_last {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: scaleX(1);
+}
+
+.app__thumbnail:hover .app__thumbnail_last {
+    opacity: 100;
+}
+
+.app__thumbnail_icon {
+    height: 20px;
+    margin: 0 8px;
+}

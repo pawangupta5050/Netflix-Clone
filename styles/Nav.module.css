@@ -1,0 +1,51 @@
+.app__navbar_container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.app__navbar {
+    display: flex;
+    padding: 10px 80px;
+    font-size: 2rem;
+    line-height: 2rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-autohiding-style: none;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+}
+
+.app__navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.app__navbar_text:last-child {
+    padding-right:  96px;
+    
+}
+
+.app__navbar_text {
+    margin-right: 50px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 100ms;
+
+
+}
+
+.app__navbar_text:hover {
+        color: white;
+}
+
+.app__navbar_text:active {
+    color: rgb(239 68 68 / 1);
+}
+
+.app__navbar_last {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to left, #000, transparent );
+    height: 40px;
+    width: 8.333333%;
+}

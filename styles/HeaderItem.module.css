@@ -1,0 +1,40 @@
+.app__headerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 7rem;    
+    cursor: pointer;
+    
+}
+
+.app__headerItem:hover {
+    color: rgb(255 255 255 / 1);
+    animation: bounce 1s infinite;
+    /* opacity: 100; */
+}
+
+.app__headerItem:hover .app__headerItem_text {
+    opacity: 1;
+    font-size: 1.6rem;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+.app__headerItem_icon {
+    height: 42px;
+    margin: 4px;
+}
+
+.app__headerItem_text {
+    opacity: 0;
+    letter-spacing: 0.1em;
+}
